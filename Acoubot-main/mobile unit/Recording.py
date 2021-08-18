@@ -5,10 +5,9 @@ import wave
 form_1 = pyaudio.paInt24   # 24-bit resolution
 chans = 1                  # 1 channel
 samp_rate = 48000          # 48kHz sampling rate
-chunk = 8192 # 2^13 samples for buffer
-record_secs = 5 # seconds to record
-dev_index = 1 # device index found by p.get_device_info_by_index(ii)
-wav_output_filename = 'CONNECT.wav' # name of .wav file
+chunk = 8192               # 2^13 samples for buffer
+dev_index = 1              # device index found by p.get_device_info_by_index(ii)
+
 
 def measure(rec_time=12, wav_name='deafult.wav'):
     p = pyaudio.PyAudio()
