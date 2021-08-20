@@ -58,7 +58,6 @@ def create_sweep(start_frequency,
                  sample_rate,
                  amplitude_dbfs):
     time_vector = np.arange(time_start, duration * sample_rate) / sample_rate
-    #t_impulse = np.arange(-duration * sample_rate / 2, duration * sample_rate / 2) / sample_rate
     t_impulse = np.arange(-sample_rate / 2, sample_rate / 2) / sample_rate
     R = np.log(stop_frequency / start_frequency)
     amplitude = dbfs_to_amp(amplitude_dbfs)
@@ -73,7 +72,6 @@ def create_sweep(start_frequency,
 
 def cross_cor(recorded):
     sine_sweep_name = "./Signal/sine_sweep.wav"
-    #sweep = sa.WaveObject.from_wave_file(sine_sweep_name)
     fs,sweep = wavfile.read(sine_sweep_name)
     corr = signal.correlate(sweep, recorded)
     return
@@ -81,8 +79,6 @@ def cross_cor(recorded):
 def record_analyzer(inv_sine_sweep, record_path, ir_path, figure_save_directory,sample_rate):
 
     first_noise = 63
-    #first_noise = 100
-    #last_noise = 8000
     last_noise = 10000
     first_reverb = 125
     last_reverb = 4000
