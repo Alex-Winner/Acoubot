@@ -71,6 +71,19 @@ def create_sweep(start_frequency,
                  time_start,
                  sample_rate,
                  amplitude_dbfs):
+    """
+
+    Args:
+        start_frequency:
+        stop_frequency:
+        duration:
+        time_start:
+        sample_rate:
+        amplitude_dbfs:
+
+    Returns:
+
+    """
     time_vector = np.arange(time_start, duration * sample_rate) / sample_rate
     t_impulse = np.arange(-sample_rate / 2, sample_rate / 2) / sample_rate
     R = np.log(stop_frequency / start_frequency)
