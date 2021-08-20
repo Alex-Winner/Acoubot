@@ -21,10 +21,24 @@ height_space_plot = 0.3
 db_ref = 0.00002        # 2pP
 
 
-def dbfs_to_amp(amp_dbfs):
-    return 10 ** (amp_dbfs/20)
+def dbfs_to_amp(dBfs):
+    """
+    Args:
+        dBfs: dBfs value
+
+    Returns: Amplitude of a signal
+    """
+    return 10 ** (dBfs/20)
+
 
 def amp_to_dbfs(amp):
+    """
+    Only for 24 bit signal
+    Args:
+        amp: Amplitude of a signal
+
+    Returns: dBfs value
+    """
     return 20 * np.log10(np.abs(amp)/(2**23-1))
 
 
@@ -197,4 +211,4 @@ def record_analyzer(inv_sine_sweep, record_path, ir_path, figure_save_directory,
     #original
     #return RT_60, ir, spl_bands_octave[1], spl_bands_a_weighted,spl_noise, db_a, bands_noise_octave, bands_reverb
     #experiment
-    return RT_60_third,RT_60, ir, spl_bands_octave[1], spl_bands_a_weighted,spl_noise, db_a, bands_noise_octave, bands_reverb
+    return RT_60_third, RT_60, ir, spl_bands_octave[1], spl_bands_a_weighted, spl_noise, db_a, bands_noise_octave, bands_reverb
