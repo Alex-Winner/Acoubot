@@ -44,6 +44,10 @@
 
 </style>
 
+<!-- MathJax -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 # Acoubot
 ![center](img/robot_pic.png)
 
@@ -562,7 +566,9 @@ To predict the usage time of the MU's power supply, Peukert's law was utilized. 
 
 Here is the formula used for calculating usage time (t) with Peukert's law:
 
+
 $$\Large t = H \cdot (\frac{C}{I})^k$$
+
 
 Where:
 
@@ -1373,17 +1379,17 @@ Desired Outcome: The objective was to achieve an approximation error (δ) of les
 
 <span class=table_validation>
 
-Measurement | Data      | Point #1  | Point #2  | Point #3  | Point #4  | Point #5  |
-------------|-----------|:---------:|:---------:|:---------:|:---------:|:----------|
-REW         | Input     | 27.5      | 27.5      | 29.8	    | 30.2	    | 29.2      |
-REW         | AntiLog   | 562.3413  | 562.3413  | 954.9926	| 1047.129	| 831.7638  |
-REW         | Average   | 568.8906  | 549.6866  | 722.3857	| 779.995	| 769.8548  |
-REW         | Log       | 27.55029  | 27.40115  | 28.58769	| 28.92092	| 28.86409  |
-Acoubot     | Input     | 27.8      | 27.4      | 30.1	    | 28.4	    | 30.4      |
-Acoubot     | AntiLog   | 602.5596  | 549.5409  | 1023.293	| 691.831	| 1096.478  |
-Acoubot     | Average   | 588.9998  | 555.9411  | 1141.109	| 771.4845	| 1036.858  |
-Acoubot     | Log       | 27.70115  | 27.45029  | 30.57327	| 28.87327	| 30.15719  | 
-Error [%]   |           | 0.547593  | 0.179323  | 6.945579	| 0.164746	| 4.479974  |  
+Measurement | Data    | Point #1 | Point #2 | Point #3 | Point #4 | Point #5
+------------|---------|:--------:|:--------:|:--------:|:--------:|:--------
+REW         | Input   |   27.5   |   27.5   |   29.8   |   30.2   | 29.2
+REW         | AntiLog | 562.3413 | 562.3413 | 954.9926 | 1047.129 | 831.7638
+REW         | Average | 568.8906 | 549.6866 | 722.3857 | 779.995  | 769.8548
+REW         | Log     | 27.55029 | 27.40115 | 28.58769 | 28.92092 | 28.86409
+Acoubot     | Input   |   27.8   |   27.4   |   30.1   |   28.4   | 30.4
+Acoubot     | AntiLog | 602.5596 | 549.5409 | 1023.293 | 691.831  | 1096.478
+Acoubot     | Average | 588.9998 | 555.9411 | 1141.109 | 771.4845 | 1036.858
+Acoubot     | Log     | 27.70115 | 27.45029 | 30.57327 | 28.87327 | 30.15719
+Error [%]   |         | 0.547593 | 0.179323 | 6.945579 | 0.164746 | 4.479974
 
 </span>
 
@@ -1446,17 +1452,17 @@ Approximation Error (δ) < 5%
 
 **Manual Room Measurement:**
 
-Test    | Length[m] | Width[m]  |
-:------:|:---------:|:---------:|
-1       | 6.6       | 3.25      |
+Test | Length[m] | Width[m]
+:---:|:---------:|:-------:
+  1  |    6.6    |   3.25
 
 **Test Results:**
 
-Test    | Length[m] | Width[m]  |
-:------:|:---------:|:---------:|
-1       | 6.6       | 3.26      |
-2       | 6.61      | 3.26      |
-3       | 6.59      | 3.25      |
+Test | Length[m] | Width[m]
+:---:|:---------:|:-------:
+  1  |    6.6    |   3.26
+  2  |   6.61    |   3.26
+  3  |   6.59    |   3.25
 
 > Average Error Approximation = 0.21% 
 
@@ -1470,11 +1476,11 @@ Approximation Error (δ) < 5%
 
 **Test Results:**
 
-Test    | Height[m] |
-:------:|:---------:|
-1       | 2.74      |
-2       | 2.65      |
-3       | 2.68      |
+Test | Height[m]
+:---:|:--------:
+  1  |   2.74
+  2  |   2.65
+  3  |   2.68
 
 > Average Error Approximation = 0.49%
 
@@ -1495,13 +1501,13 @@ When the robot arrives at a designated point, its distance to that point will be
 Distance < 30cm
 
 **Test Results:**<br>
-Test    | Distance[cm]  |
-:------:|:-------------:|
-1       | 10.5          |
-2       | 12            |
-3       | 9             |
-4       | 8.3           |
-5       | 7             |
+Test | Distance[cm]
+:---:|:-----------:
+  1  |     10.5
+  2  |      12
+  3  |      9
+  4  |     8.3
+  5  |      7
 
 #### Navigation to a Set of Measurement Points
 
@@ -1559,13 +1565,13 @@ During robot movement, the microphone pole experiences oscillations resembling a
 Vibration Time (Tvibration) < 10 Seconds
 
 **Test Results:**
-Test    | Time[Sec] |
-:------:|:---------:|
-1       | 9.8       |
-2       | 8         |
-3       | 8.3       |
-4       | 8.5       |
-5       | 9.2       |
+Test | Time[Sec]
+:---:|:--------:
+  1  |    9.8
+  2  |     8
+  3  |    8.3
+  4  |    8.5
+  5  |    9.2
 
 
 **Result:** <br>
