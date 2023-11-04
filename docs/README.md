@@ -45,7 +45,8 @@
 </style>
 
 <!-- MathJax -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.0.0/es5/latest?tex-mml-chtml.js">
 </script>
 
 # Acoubot
@@ -572,11 +573,11 @@ $$\Large t = H \cdot (\frac{C}{I})^k$$
 
 Where:
 
-$t$ - is the actual time to discharge the battery (in hours). <br>
-$H$ - is the rated discharge time (in hours). <br>
-$C$ - is the rated capacity at that discharge rate (in milliampere-hours). <br>
-$I$ - is the actual discharge current (in milliamperes). <br>
-$k$ - is the Peukert constant (dimensionless). <br>
+t - is the actual time to discharge the battery (in hours). <br>
+H - is the rated discharge time (in hours). <br>
+C - is the rated capacity at that discharge rate (in milliampere-hours). <br>
+I - is the actual discharge current (in milliamperes). <br>
+k - is the Peukert constant (dimensionless). <br>
 
 With a Peukert constant of 1, the calculated usage time for the power supply was approximately 4 hours.
 
