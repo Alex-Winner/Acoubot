@@ -38,9 +38,6 @@ We invite students, educators, researchers, and enthusiasts in the fields of aco
 
 For a more detailed exposition of the Acoubot system, please navigate through the contents of the [project book](https://alex-winner.github.io/Acoubot/).
 
-
->>>>>>> Stashed changes
-
 ## Contents of Project Book
 1. [Abstract](https://alex-winner.github.io/Acoubot/#1-abstract)
 2. [Introduction](https://alex-winner.github.io/Acoubot/#2-introduction)
