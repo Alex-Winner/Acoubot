@@ -45,7 +45,7 @@
 </style>
 
 # Acoubot
-![center](/Documentation/img/robot_pic.png)
+![center](/docs/img/robot_pic.png)
 
 ## Contents
 1. [Abstract](#1-abstract)
@@ -220,13 +220,13 @@ Measuring the room's dimensions is essential for understanding the behavior of s
 ### Theoretical background
 #### Theoretical Problem survey
 
-![Speech intelligibility](/Documentation/img/stn_ratio.png)
+![Speech intelligibility](/docs/img/stn_ratio.png)
 
 According to academic research, a significant number of classrooms fall short of standard acoustic requirements. For instance, in 11 active Korean university classrooms, adult students experienced average speech levels of 51.5 dBA, noise levels of 44.3 dBA, and a speech-to-noise ratio of 7.2 dBA. Poor classroom acoustics have a direct adverse impact on speech intelligibility, particularly in university classrooms and labs, and even more so in younger schools.
 
 In 2016, an assessment model (CAAM) categorized factors affecting speech intelligibility, extending beyond classroom acoustics to encompass lighting, proper ventilation (temperature-related, not noise-related), and teaching style. Among these parameters, it's evident that acoustics and noise have the most pronounced influence on speech intelligibility, as indicated by the chart below.
 
-![Ranking of all alternatives’ weight related to the CAAM Model.](/Documentation/img/ranking.png)
+![Ranking of all alternatives’ weight related to the CAAM Model.](/docs/img/ranking.png)
 
 The ANSI S12.60 standard for classroom acoustics addresses both reverberation time and background noise and sets maximum permissible levels for each:
 
@@ -264,17 +264,17 @@ To address the technical challenges encountered in the project, several solution
 
 * **Hand-held XL2 Analyzer:** The Hand-held XL2 Analyzer is a versatile instrument that serves as a Sound Level Meter, a professional Acoustic Analyzer, a precision Audio Analyzer, and a comprehensive Vibration Meter all in one. It offers various analyzers, including capabilities for measuring RT60 (Reverberation Time), Speech Intelligibility STIPA (additional components may be required), and Noise curves. The data collected can be conveniently stored as a .txt file on an SD card, allowing for further analysis.
 
-![center](/Documentation/img/xl2-analyzer.png)
+![center](/docs/img/xl2-analyzer.png)
 
 
 * **Bedrock Intelligibility Measurement Kit:** This kit comprises a Bedrock SM50 analyzer and a Bedrock BTB65 Talkbox Loudspeaker. It is specifically designed for conducting STIPA tests and measuring Noise levels (Pink and White). Notably, the kit plays back signals with automatically calibrated spectrum and levels, eliminating the need for user calibration.
 
-![center](/Documentation/img/bedrock-kit.png)
+![center](/docs/img/bedrock-kit.png)
 
 
 * **REW (Room EQ Wizard):** REW is a free room acoustics analysis software that facilitates the measurement and analysis of room and loudspeaker responses. It provides tools for displaying equalizer responses and can automatically adjust parametric equalizer settings to counteract the effects of room modes, ensuring that responses align with a target curve.
 
-![center](/Documentation/img/req.png)
+![center](/docs/img/req.png)
 
 These solutions offer valuable resources for addressing the technical challenges involved in the project, enabling accurate and efficient acoustic measurements, analysis, and room treatment recommendations.
 
@@ -375,12 +375,12 @@ These specifications define the capabilities and limitations of the Acoubot syst
 ## 4. Macro diagram of the system
 ### Whole system
 
-![center-big](/Documentation/img/hardware.png)
+![center-big](/docs/img/hardware.png)
 *Figure 4-1: Hardware architecture*
 
 ### Mobile unit	
 #### Diagram 
-![center-big](/Documentation/img/mobileUnitDiagram.png)
+![center-big](/docs/img/mobileUnitDiagram.png)
 *Figure 4-2: Mobile unit diagram*
 
 
@@ -398,12 +398,12 @@ Index | Interface  | Notes
 
 #### Electric circuit
 
-![Mobile unit electric circuit](/Documentation/img/circuit.png)
+![Mobile unit electric circuit](/docs/img/circuit.png)
 *Figure 4-3: Mobile unit electric circuit*
 
 ### Stationary unit
 
-![Stationary unit diagram](/Documentation/img/stationary_unit.png)
+![Stationary unit diagram](/docs/img/stationary_unit.png)
 
 *Figure 4-4: Stationary unit diagram*
 
@@ -417,7 +417,7 @@ Index | Interface       | Notes
 ## 5. Hardware
 ### Block diagram
 
-![center-big](/Documentation/img/full_block_diagram.png)
+![center-big](/docs/img/full_block_diagram.png)
 
 *Figure 5-1: Full block diagram*
 
@@ -425,7 +425,7 @@ Index | Interface       | Notes
 
 The core of our mobile unit is the Raspberry Pi 4b. This versatile single-board computer serves as the central processing unit for our system, orchestrating the operation of sensors and actuators while also providing onboard Wi-Fi connectivity. With an embedded Python interpreter, the Raspberry Pi seamlessly integrates into our system's architecture. Here are some key details about the Raspberry Pi 4b:
 
-![RPi model 4b](/Documentation/img/rpi_model_b.png)
+![RPi model 4b](/docs/img/rpi_model_b.png)
 
 *Figure 5-2:RPi model 4b*
 
@@ -439,14 +439,14 @@ The core of our mobile unit is the Raspberry Pi 4b. This versatile single-board 
 
 The Raspberry Pi 4b's combination of processing power, memory, GPIO flexibility, and modularity makes it an ideal choice for the core of our mobile unit, facilitating seamless integration and control of various sensors and actuators in our Acoubot system.
 
-![center](/Documentation/img/gpio.jpg)
+![center](/docs/img/gpio.jpg)
 
 *Figure 5-4:GPIO*
 
 ### Sensors	
 #### LIDAR
 
-![center-big](/Documentation/img/lidar1.png)
+![center-big](/docs/img/lidar1.png)
 
 *Figure 5-5:Lidar work concept*
 
@@ -468,13 +468,13 @@ Here are some key details about the RPLIDAR sensor:
 
 Overall, the RPLIDAR sensor's ability to rapidly and accurately measure distances, combined with its 360-degree scanning capability, makes it an invaluable component in our Acoubot system, enabling self-localization and room dimension data acquisition for acoustic measurements.
 
-![center-big](/Documentation/img/lidar2.png)
+![center-big](/docs/img/lidar2.png)
 
 *Figure 5-6: Lidar specification*
 
 #### Ultrasonic
 
-![center](/Documentation/img/ultrasonic.jpg)
+![center](/docs/img/ultrasonic.jpg)
 
 *Figure 5-7: Ultrasonic sensor*
 
@@ -498,7 +498,7 @@ The HC-SR04 ultrasonic sensor's combination of accurate range detection, wide me
 
 #### UMIK-1 microphone
 
-![center-big](/Documentation/img/mic_spec.png)
+![center-big](/docs/img/mic_spec.png)
 
 *Figure 5-8: Microphone specifications*
 
@@ -521,13 +521,13 @@ In summary, the UMIK-1 microphone's specialized design, omni-directional pickup 
 ### Actuators
 #### DC motors
 
-![center-big](/Documentation/img/dc-motors.jpg)
+![center-big](/docs/img/dc-motors.jpg)
 
 In our system, we employ standard dual-shaft geared DC motors, utilizing a total of four motors with one dedicated to each wheel. Initially, we experimented with a robot design featuring tracks for smoother pivoting. However, this design proved to be high-maintenance. We subsequently transitioned to a wheel-based design, which still allowed for sufficiently smooth pivoting.
 
 #### Motor shield module
 
-![center-big](/Documentation/img/rpi_motor_shield.png)
+![center-big](/docs/img/rpi_motor_shield.png)
 
 The Motor Shield Module serves as a crucial component in our system, acting as an extension or "hat" for the Raspberry Pi. This module facilitates the control of up to four separate DC motors. It achieves this through the inclusion of two Dual H-bridge IC L293D chips, which function as the motor controllers. Each of these chips can independently control two separate motors.
 
@@ -535,7 +535,7 @@ The Motor Shield Module serves as a crucial component in our system, acting as a
 
 To understand the functionality of the Motor Shield Module, it's essential to grasp the concept of an H-Bridge circuit. An H-Bridge circuit consists of four switches arranged in an "H" shape configuration, with the motor positioned at the center. This arrangement allows for the control of the motor's spinning direction by changing the polarity of its input voltage.
 
-![center-big](/Documentation/img/h-bridge.png)
+![center-big](/docs/img/h-bridge.png)
 
 > *Here's how it works:*
 >
@@ -676,7 +676,7 @@ To ensure stable communication between the mobile unit (MU) and stationary unit 
 
 By implementing this wireless communication setup with the portable mini router, the Acoubot system achieves stable and reliable connectivity between the MU and SU, facilitating data transfer and control between the two units effectively.
 
-![center](/Documentation/img/mini-router.png)
+![center](/docs/img/mini-router.png)
 
 ## 6. Software
 ### Background
@@ -686,7 +686,7 @@ In our four years of study, we've acquired proficiency in three programming lang
 
 Python's extensive support for modules and sensors, along with the availability of libraries and code examples, made it a user-friendly choice. These resources simplified the process of self-learning for each module and sensor, facilitating our understanding and utilization of these components. By coding in Python, we were able to focus more on developing the core algorithms of the project and less on creating I/O functions from scratch. While there was still a substantial amount of work involved in processing raw sensor data into usable, analyzable data, Python's flexibility and robust libraries helped streamline the development process.
 
-![center-big](/Documentation/img/software.png)
+![center-big](/docs/img/software.png)
 
 *Figure 6-1: Software architecture diagram*
 
@@ -767,7 +767,7 @@ $H_{avg} [m]$ - average height of ceiling <br>
 
 The Audio Analyzer module in the Acoubot system serves the purpose of determining the Transmit function of a room. This is achieved by broadcasting an Exponential Sweep Sine (ESS) signal into the air and recording it using a dedicated microphone. When the system records this signal, it captures it with 24-bit quantization, which provides high-quality and detailed audio data for analysis and processing. This recorded data will be crucial for understanding the acoustic properties of the room and making necessary adjustments to improve its acoustics.
 
-![](/Documentation/img/Audio-processing.png)
+![](/docs/img/Audio-processing.png)
 *Figure 6-3: Audio processing*
 
 #### ESS signal
@@ -788,7 +788,7 @@ $R=\ln(\frac{f_e}{f_s})$ - sweep rate
 <br>
 <br>
 
-![](/Documentation/img/ess.png)
+![](/docs/img/ess.png)
 
 *Figure 6-2:ESS*
 
@@ -804,7 +804,7 @@ $$\Large f(t) = \frac{x_{inv}(t)}{e^{\frac{tR}{T}}}$$
 <br>
 <br>
 
-![](/Documentation/img/inverse_filter.png)
+![](/docs/img/inverse_filter.png)
 *Figure 6-4: Inverse filter*
 
 #### Impulse response
@@ -817,7 +817,7 @@ The result of this convolution in the frequency domain is then transformed back 
 
 Analyzing the room's impulse response is valuable for various acoustic applications, including assessing reverberation time, speech intelligibility, and overall room acoustics. It provides insights into the room's behavior with respect to sound, helping to make informed decisions for acoustic treatments or modifications.
 
-![](/Documentation/img/transmit.png)
+![](/docs/img/transmit.png)
 *Figure 6-5: Transmit function*
 
 #### Amplitude to dBFS
@@ -864,7 +864,7 @@ The result of applying A-weighting is a weighted measurement that better reflect
 
 In your algorithm, you mentioned that you add a table of A-weighting filter values to the calculated values from measurements in one-third octave bands. This approach allows you to adjust the measurements to account for the A-weighting curve, making them more relevant for assessing how noise or sound is perceived by the human ear.
 
-![center](/Documentation/img/a-whe.png)
+![center](/docs/img/a-whe.png)
 
 The A-weighting filter can be applied to a signal in the frequency domain using convolution with the A-weighting curve. Here's a simplified formula for applying A-weighting to a signal:
 
@@ -878,7 +878,7 @@ The A-weighting curve, A(f), is typically provided in standardized tables or as 
 
 >Please note that in practice, the A-weighting curve is defined in standards such as ANSI S1.4, and you may need to use the specific coefficients provided in those standards to accurately apply A-weighting to your measurements. The actual A-weighting curve is more complex than a simple mathematical formula, as it involves a series of specific frequency-dependent coefficients.
 
-![](/Documentation/img/octave%20bands.png)
+![](/docs/img/octave%20bands.png)
 
 #### Logarithmic Average
 
@@ -896,7 +896,7 @@ This formula is useful when you want to compute an average that considers the ma
 
 ###  From Acoustic Measurements to Treatment Solutions
 
-![center-big](/Documentation/img/audio-analizer.png)
+![center-big](/docs/img/audio-analizer.png)
 
 In this section, we delve into the process of translating acoustic measurement data into practical treatment solutions for optimizing room acoustics. The objective is to enhance the acoustic environment by addressing noise levels (dBA and dBSPL) and reverberation time (RT60).
 
@@ -931,7 +931,7 @@ The navigation process is a crucial component that seamlessly integrates acousti
 * <span class="blue">Blue Dots:</span> These represent measurement points where acoustic data and height measurements are collected. <br>
 * <span class="green">Green Dots:</span> These serve as navigation aid points, guiding the robot's path. <br>
 
-![center-big](/Documentation/img/nav-route.png)
+![center-big](/docs/img/nav-route.png)
 
 As the robot embarks on its navigation, it follows a predetermined path indicated by arrows. The complete route is illustrated in the figure. During initial tests, it was discovered that the robot's hardware configuration couldn't execute the entire route in a single scan. Cumulative errors accumulated, limiting the robot's ability to navigate beyond two points of interest. To mitigate this challenge, additional hardware, such as an accelerometer, was considered. However, the chosen solution involves working with pre-defined trajectories and performing Lidar scans before each point-to-point movement.
 
@@ -957,7 +957,7 @@ The measurement process encompasses various essential components that harmonious
 
 This comprehensive data collection and integration process are fundamental to the system's ability to perform accurate acoustic measurements and navigate its environment effectively. The combination of sensor data, computer vision, and acoustic recordings ensures a holistic understanding of the room and its acoustic properties.
 
-![center-big](/Documentation/img/measurement-process.png)
+![center-big](/docs/img/measurement-process.png)
 
 *Figure 6-7: Measurement process*
 
@@ -965,13 +965,13 @@ This comprehensive data collection and integration process are fundamental to th
 
 The scanning process is conducted through iterative measurements obtained from the Lidar sensor. In each iteration, data is collected as the Lidar completes one full rotation. The frequency of data reception is determined by the rotational speed of the Lidar. The received data, comprising angle and distance information, undergoes verification to ensure measurement quality. If the data is deemed reliable, the SLAM (Simultaneous Localization and Mapping) algorithm updates the map.
 
-![center-big](/Documentation/img/scanning-process.jpg)
+![center-big](/docs/img/scanning-process.jpg)
 
 *Figure 6-8: Scanning process*
 
 To create an accurate representation of the environment, the robot performs a sufficient number of iterations. In this system, approximately 100 iterations are necessary to generate a precise spatial map. Once the required iterations are complete, the most recent map is saved as a .png image.
 
-![center-big](/Documentation/img/slam_map.png)
+![center-big](/docs/img/slam_map.png)
 
 *Figure 6-9: SLAM map*
 
@@ -987,13 +987,13 @@ This scanning process and SLAM algorithm output generation enable the robot to c
 
 To determine the optimal points for navigating in space, it's crucial to identify easily locatable reference points across various scans, locations, and robot angles. Our initial focus is on the walls, as their relative positions remain consistent between scans. We achieve this by employing computer vision algorithms, primarily leveraging the OpenCV library. This algorithm comprises several key stages:
 
-![center-big](/Documentation/img/cv_processing.png) <br>
+![center-big](/docs/img/cv_processing.png) <br>
 *Figure 6-10: CV processing*
 
 * Pre-processing Stage:
     * Utilizing a Binary Filter: This stage establishes a threshold to distinguish obstacles from walls. It helps in differentiating what constitutes a wall and what qualifies as an obstacle.
 
-    ![center-big](/Documentation/img/binary_filter.png) <br>
+    ![center-big](/docs/img/binary_filter.png) <br>
     *Figure 6-11: binary filter output*
 
     * Applying a Morphological Filter: The morphological filter, consisting of dilation and erosion operations, plays a pivotal role. Dilation enhances object visibility and fills small holes, while erosion removes unwanted elements. This step is crucial in removing extraneous features, such as chair legs in the classroom, which align with the scanning direction of the Lidar.
@@ -1001,7 +1001,7 @@ To determine the optimal points for navigating in space, it's crucial to identif
     * It's worth noting that while the walls may still be imperfect, and there may be white dots on the map, these imperfections do not affect the subsequent stages of the process.
 
 
-    ![center-big](/Documentation/img/morphological_filter.png) <br>
+    ![center-big](/docs/img/morphological_filter.png) <br>
     *Figure 6-12: Morphological filter output*
 
     > The filtered output reveals white areas representing obstacles. Within this output, we can identify lines representing walls and lines that are by-products of chair legs, which align radially with the Lidar's scanning direction.
@@ -1013,7 +1013,7 @@ To determine the optimal points for navigating in space, it's crucial to identif
     * The Hough transform is employed to identify lines within the image. Notably, the parameters for line detection, including the minimum line length, have been meticulously calibrated in the field.
     * The Hough transform yields a list of coordinates, with each row containing four values representing the X and Y coordinates at both the beginning and end of each line. This list may be extensive, particularly when multiple lines or segments contribute to a single wall.
 
-    ![center-big](/Documentation/img/hough_transform.png) <br>
+    ![center-big](/docs/img/hough_transform.png) <br>
     *Figure 6-13: Hough transform*
 
 * Line Grouping and Intersection Point Calculation:
@@ -1081,7 +1081,7 @@ To determine the optimal points for navigating in space, it's crucial to identif
 
     To visualize the navigation algorithm, we use a graphical representation. The starting position of the robot is     depicted in red, while the next destination is marked in green, providing a clear path for the robot's movement and     navigation objectives.
 
-    ![center-big](/Documentation/img/nav_points.png) <br>
+    ![center-big](/docs/img/nav_points.png) <br>
     *Figure 6-14: Nav points*
 
 #### Navigation (Drive)
@@ -1090,7 +1090,7 @@ The navigation process closely mirrors the scanning process, with the goal of gu
 
 Here's an overview of how navigation unfolds:
 
-![center-big](/Documentation/img/nav.png) <br>
+![center-big](/docs/img/nav.png) <br>
 *Figure 6-15: Navigation process*
 
 
@@ -1146,14 +1146,14 @@ In TCP-based networks, you typically have two key roles: the server and the clie
 
 In summary, Acoubot utilizes the Python socket library and a TCP-based network architecture. The MU acts as a server, while the SU serves as a client, enabling seamless communication and data exchange between the two components of the system.
 
-![center-big](/Documentation/img/comm.jpg)
+![center-big](/docs/img/comm.jpg)
 
 *Figure 6-15: Communication*
 
 
 ### User Interface
 
-![center-big](/Documentation/img/gui.png)
+![center-big](/docs/img/gui.png)
 
 *Figure 6-16: GUI*
 
@@ -1177,33 +1177,33 @@ Additionally, supplementary functions have been developed to manage user interac
 
 The Home Screen of the app provides the user with the choice to initiate a new benchmark in a fresh room or access data from a previously benchmarked room. This interface aims to simplify the user's interaction with the application, offering clear options for their desired action.
 
-![center-big](/Documentation/img/gui_menu_window.png)
+![center-big](/docs/img/gui_menu_window.png)
 *Figure 6-17: GUI menu window*
 
 #### **New Room Window**
 
 In the "New Room" window, the user can input the name of the room, typically denoting it by a descriptor such as a class number. This information is crucial for organizing and distinguishing benchmarks associated with different rooms.
 
-![center-big](/Documentation/img/gui_room_window.png)
+![center-big](/docs/img/gui_room_window.png)
 
 *Figure 6-18: GUI new room window*
 
 #### **Connection Window**
 In the "Connection Window," users can perform a connection check to ensure that the benchmark process proceeds smoothly without any connectivity issues. 
 
-![center-big](/Documentation/img/gui_connection_window.png) <br>
+![center-big](/docs/img/gui_connection_window.png) <br>
 *Figure 6-19: GUI connection window*
 
 The system will verify the connection, and if successful, it will enable the "Continue" button, allowing users to proceed further with the benchmark process. This step helps guarantee that the necessary connections are established before proceeding.
 
-![center-big](/Documentation/img/gui_connection_window_2.png) <br>
+![center-big](/docs/img/gui_connection_window_2.png) <br>
 *Figure 6-20: GUI connection window 2*
 
 #### **Pre-scan Preparations Window**
 
 In the "Pre-scan Preparations" window, users are guided through the necessary steps to prepare for the benchmark scan. Clear instructions and diagrams are provided to illustrate where to place the speaker and the Master Unit (MU) for optimal scanning conditions. This ensures that the benchmarking process is conducted accurately and effectively.
 
-![center-big](/Documentation/img/gui_begin_benchmark.png) <br>
+![center-big](/docs/img/gui_begin_benchmark.png) <br>
 *Figure 6-21: GUI begin benchmark*
 
 
@@ -1223,13 +1223,13 @@ When a measuring point is clicked, a small window opens, presenting a detailed d
 
 The "Map Window" serves as a valuable resource for users to visualize and interact with benchmark data. It can be accessed automatically at the end of a new benchmark or at any later time through the "existing room" option, providing users with a comprehensive view of room-related information.
 
-![center-big](/Documentation/img/gui_map_window.png) <br>
+![center-big](/docs/img/gui_map_window.png) <br>
 *Figure 6-22: GUI map window*
 
 **Measured Point Window** <br>
 In the "Measured Point Window," users can access detailed information about the specific problems identified at the selected measuring point. This window provides a comprehensive overview of the issues found, enabling users to review and address them effectively.
 
-![center-big](/Documentation/img/gui_point_window.png) <br>
+![center-big](/docs/img/gui_point_window.png) <br>
 *Figure 6-23: GUI point window*
 
 **Existing Room List Window** <br>
@@ -1237,7 +1237,7 @@ In the "Existing Room List Window," users can view a list of all the rooms that 
 
 To proceed with a specific room, users can click on the room's name from the list. Upon selecting a room, the "Continue" button is enabled, allowing users to access and work with the data associated with that particular room. This window streamlines the process of accessing and continuing work in previously benchmarked rooms.
 
-![center-big](/Documentation/img/gui_existing_room_list.png) <br>
+![center-big](/docs/img/gui_existing_room_list.png) <br>
 *Figure 6-24: GUI existing room list*
 
 **Benchmark List Window** <br>
@@ -1251,7 +1251,7 @@ In the "Benchmark List Window," users can access a comprehensive list of all the
 
 The *"Benchmark List Window"* provides users with an organized overview of their benchmarking history and offers options to either review past benchmarks or initiate new ones as needed.
 
-![center-big](/Documentation/img/gui_ben.png) <br>
+![center-big](/docs/img/gui_ben.png) <br>
 *Figure 6-25: GUI benchmark list*
 
 
@@ -1274,7 +1274,7 @@ The design of the microphone and ultrasonic holder initially started as a microp
 
 To address this issue and improve the sensor's performance, a decision was made to relocate the ultrasonic sensor to the top of the robot alongside the microphone. This redesign not only rectified the sensor interference problem but also enhanced the robot's ability to measure room height. With the ultrasonic sensor now positioned at the highest point, the robot can measure taller ceilings accurately, while also improving accuracy for lower ceilings.
 
-![center](/Documentation/img/Microphone%20and%20Ultrasonic%20holder.png) <br>
+![center](/docs/img/Microphone%20and%20Ultrasonic%20holder.png) <br>
 *Figure 7-1: Microphone and ultrasonic sensor holder*
 
 #### Microphone - body mount
@@ -1283,7 +1283,7 @@ The connection between the microphone pole and the robot's body is a critical co
 
 The microphone body mount is securely attached to the robot's backing bracket using six screws, ensuring a stable and durable connection. The printed part is designed with a composite thickness to enhance the strength and resilience of the connector, making it capable of withstanding the rigors of the robot's movements and vibrations.
 
-![center](/Documentation/img/Microphone%20body%20mount.png) <br>
+![center](/docs/img/Microphone%20body%20mount.png) <br>
 *Figure 7-2: Microphone body mount*
 
 #### Wheels Frame
@@ -1292,7 +1292,7 @@ Initially, the robot was printed using the original PROTOTANK design, which feat
 
 To address this issue and improve shock absorption, the design was modified to incorporate wheels typically found on cars, complete with rubber tires. This alteration significantly reduced the impact and shock transmitted through the robot. Additionally, the modified design allows for the attachment of unique wheels, offering flexibility and adaptability to different use cases.
 
-![center](/Documentation/img/wheels%20frame.png) <br>
+![center](/docs/img/wheels%20frame.png) <br>
 *Figure 7-3: Wheels Frame*
 
 #### Raspberry Pi Holder
@@ -1301,28 +1301,28 @@ The design of the Raspberry Pi holder addressed the challenge of component place
 
 The creation of a customized Raspberry Pi holder offered a solution to this problem. This holder allowed for the optimal placement of various components, ensuring that the microphone pole and Lidar sensor could be situated centrally within the robot's body. This design modification improved the overall balance and functionality of the robot.
 
-![center](/Documentation/img/RPi%20holder.png) <br>
+![center](/docs/img/RPi%20holder.png) <br>
 *Figure 7-4: RPi holder*
 
 #### Lidar Holder
 
 The Lidar sensor holder plays a pivotal role in the overall system. It serves as an essential component that facilitates the connection of the Lidar sensor to the robot's body. Without this holder, it would be impossible to securely and effectively integrate the Lidar sensor into the robot's structure. This holder ensures the stability and functionality of the Lidar sensor, making it a critical part of the system.
 
-![center](/Documentation/img/Lidar%20holder.png) <br>
+![center](/docs/img/Lidar%20holder.png) <br>
 *Figure 7-5: Lidar holder*
 
 ### Robot body – Location of components
 
-![center-big](/Documentation/img/Robot%20body.png) <br>
+![center-big](/docs/img/Robot%20body.png) <br>
 Figure 7-6: 3D printed parts location - body
 
-![center-big](/Documentation/img/3D%20printed%20parts%20-%20microphone%20pole.png) <br>
+![center-big](/docs/img/3D%20printed%20parts%20-%20microphone%20pole.png) <br>
 Figure 7-7: 3D printed parts - microphone pole
 
 ### Project poster
 
-![center-big](/Documentation/img/poster1.png) 
-![center-big](/Documentation/img/poster2.png) <br>
+![center-big](/docs/img/poster1.png) 
+![center-big](/docs/img/poster2.png) <br>
 *Figure 7-9: Project poster*
 
 ## 8. Validation - Testing Program
@@ -1402,8 +1402,8 @@ During the acoustic test, various noise patterns such as car engines, conversati
 **Target Result:** <br> 
 Achieve a Correct Detection Probability > 95%
 
-![](/Documentation/img/sound1.png)
-![](/Documentation/img/sound2.png)
+![](/docs/img/sound1.png)
+![](/docs/img/sound2.png)
 
 > To simulate noise patterns, we employed a portable speaker for speech and traffic sounds, and for HVAC evaluation, the air conditioning system was activated.
 
@@ -1670,32 +1670,32 @@ Panel area: 0.09 m^2<br>
 
 #### **Measurements:**
 
-![center-big](/Documentation/img/measurement1.jpg)
+![center-big](/docs/img/measurement1.jpg)
 *Figure 12-6: Measurement 1*
 <br>
 <br>
 
-![center-big](/Documentation/img/measurement2.jpg)
+![center-big](/docs/img/measurement2.jpg)
 *Figure 12-5: Measurement 2 (4 panels)*
 <br>
 <br>
 
-![center-big](/Documentation/img/measurement3.jpg)
+![center-big](/docs/img/measurement3.jpg)
 *Figure 12-3: Measurement 3 (8 panels)*
 <br>
 <br>
 
-![center-big](/Documentation/img/measurement4.jpg)
+![center-big](/docs/img/measurement4.jpg)
 *Figure 12-2: Measurement 4 (12 panels)*
 <br>
 <br>
 
-![center-big](/Documentation/img/measurement5.jpg)
+![center-big](/docs/img/measurement5.jpg)
 *Figure 12-4: Measurement 5 (16 panels)*
 <br>
 <br>
 
-![center-big](/Documentation/img/measurement6.jpg)
+![center-big](/docs/img/measurement6.jpg)
 *Figure 12-7: Measurement 6 (16 panels + sofa)*
 
 #### **Results:**
@@ -1706,16 +1706,16 @@ To validate the accuracy of our data analysis, we compared our results with info
 
 This rigorous data analysis process and the alignment of our results with those obtained from established software demonstrate the reliability and precision of our measurements. The minor discrepancies observed in the graphs suggest that our methodology is robust and provides results that are consistent with widely accepted standards in acoustic analysis.
 
-![center-big](/Documentation/img/measurement_graph.png)
+![center-big](/docs/img/measurement_graph.png)
 *Figure 12-8: Impulse Response*
 
-![center-big](/Documentation/img/comp_rt60.png)
+![center-big](/docs/img/comp_rt60.png)
 *Figure 12-9: Measurement Comparison of RT_60 chart*
 
-![center-big](/Documentation/img/Measurement%20mean%20frequency%20band%20error.png)
+![center-big](/docs/img/Measurement%20mean%20frequency%20band%20error.png)
 *Figure 12-11: Measurement mean frequency band error chart*
 
-![center-big](/Documentation/img/RT_60%20value%20before%20and%20after%20acoustic%20treatment%20chart.png)
+![center-big](/docs/img/RT_60%20value%20before%20and%20after%20acoustic%20treatment%20chart.png)
 *Figure 12-10: RT_60 value before and after acoustic treatment chart*
 
 The figure above illustrates a comparison of three measurements conducted in different acoustic conditions: without acoustic panels, with eight panels covering a total area of 0.72 [m^2], and with 16 panels covering an area of 1.44 [m^2].
@@ -1731,24 +1731,24 @@ In total, the inclusion of acoustic panels led to a remarkable reduction in reve
 
 ### One-Third Octave band table
 
-![center-big](/Documentation/img/13rd_band.png)
+![center-big](/docs/img/13rd_band.png)
 
 ### Validation plan - tables and additional data
 
-![center-big](/Documentation/img/table_1.PNG)
+![center-big](/docs/img/table_1.PNG)
 
 
 #### RT60
 
-![center-big](/Documentation/img/table_rt60.PNG)
+![center-big](/docs/img/table_rt60.PNG)
 
 #### dBSPL
 
-![center-big](/Documentation/img/table_1_dbspl.PNG)
-![center-big](/Documentation/img/table_2_dbspl.PNG)
-![center-big](/Documentation/img/table_3_dbspl.PNG)
+![center-big](/docs/img/table_1_dbspl.PNG)
+![center-big](/docs/img/table_2_dbspl.PNG)
+![center-big](/docs/img/table_3_dbspl.PNG)
 
 #### reverberation time solution
 
-![center-big](/Documentation/img/table_reverb.PNG)
+![center-big](/docs/img/table_reverb.PNG)
 
